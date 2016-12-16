@@ -38,6 +38,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'records',
+    #'location_field.apps.DefaultConfig',
+    #'easy_maps',
+    'geoposition',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -102,4 +105,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-GOOGLE_PLACES_API_KEY = 'xyzbjsadgyfviaekubfvekjmzdsvkadsjb'
+#GOOGLE_PLACES_API_KEY = 'xyzbjsadgyfviaekubfvekjmzdsvkadsjb'
+
+GEOPOSITION_GOOGLE_MAPS_API_KEY = 'AIzaSyDadoCXXODGhoE_5Zf2RisBaqUERrBbT3w'
