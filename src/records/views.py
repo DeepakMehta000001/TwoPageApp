@@ -2,6 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 from .forms import AddForm
+from .models import Record
+
 def home(request):
 	title ='Add/Edit'
 	
@@ -18,3 +20,12 @@ def home(request):
 	}
 
 	return render(request,"home.html",context)
+
+
+def showRecords(request):
+	queryset = Record.objects.all()
+	context = {
+		"object_list" : queryset
+	}
+	
+	return render(request,"base.html",context)
