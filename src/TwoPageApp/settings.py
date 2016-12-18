@@ -38,11 +38,13 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'records',
+    'crispy_forms',
     #'location_field.apps.DefaultConfig',
     #'easy_maps',
     'geoposition',
 )
 
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
