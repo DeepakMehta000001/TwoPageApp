@@ -106,15 +106,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 
-#GOOGLE_PLACES_API_KEY = 'xyzbjsadgyfviaekubfvekjmzdsvkadsjb'
+GOOGLE_PLACES_API_KEY = 'xyzbjsadgyfviaekubfvekjmzdsvkadsjb'
 
 STATIC_ROOT = os.path.join(BASE_DIR,"static_in_pro","static_root")
 
 GEOPOSITION_GOOGLE_MAPS_API_KEY = 'AIzaSyDadoCXXODGhoE_5Zf2RisBaqUERrBbT3w'
 
-STATICFILES_DIRS = (
+TATICFILES_DIRS = (
     os.path.join(BASE_DIR,"static_in_pro","our_static"),
     ''
 )
